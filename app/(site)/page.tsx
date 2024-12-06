@@ -11,6 +11,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import AIAgent from "@/components/AIAgent";
 
 export const metadata: Metadata = {
   title: "🚀 MathGuy - Solana meme token",
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <AIAgent />
       <About />
       <FeaturesTab />
     </main>
