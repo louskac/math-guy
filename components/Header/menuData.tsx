@@ -9,12 +9,18 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
+    title: "AI Agent",
+    newTab: false,
+    path: "/#AIAgent",
+  },
+  {
+    id: 3,
     title: "About",
     newTab: false,
     path: "/#about",
   },
   {
-    id: 2.1,
+    id: 4,
     title: "How to buy",
     newTab: false,
     path: "/#how-to-buy",

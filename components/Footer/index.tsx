@@ -39,8 +39,8 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    Support
+                  <a href="#AIAgent" className="hover:text-primary">
+                    AI Agent
                   </a>
                 </li>
               </ul>

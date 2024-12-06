@@ -80,7 +80,7 @@ const AIAgent = () => {
   }, [isTyping, response]);
 
   return (
-    <section className="pb-20 pt-16">
+    <section id="AIAgent" className="pb-20 pt-16">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* AI Input/Output Section */}
