@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="flex items-center gap-5">
               {/* X Icon */}
               <li>
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X icon">
+                <a href="https://x.com/MathGuyCTO" target="_blank" rel="noopener noreferrer" aria-label="X icon">
                   <svg
                     className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
