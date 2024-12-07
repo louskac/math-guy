@@ -154,7 +154,7 @@ const Header = () => {
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
             <Link
-              href="https://dexscreener.com/solana/6x7cw9eu4bxa2ewznpdvztgnbyz9jnj4etd9suysmoon"
+              href="https://dexscreener.com/solana/7wlbpxhevci88bfaqksmpzmrnvld4vgbulcsr1ecmoon"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
               I want to buy 🔥

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Hero = () => {
-  const [address, setAddress] = useState("6X7CW9eu4bXa2eWZnPDVZTgnBYZ9JNJ4eTd9SUYsmoon");
+  const [address, setAddress] = useState("7WLbPXHEvCi88bFAQKSMpZmRNvLd4VgbULCSR1eCmoon");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
