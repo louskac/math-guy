@@ -38,7 +38,7 @@ const About = () => {
   ];
 
   return (
-    <section id='about' className="overflow-hidden pt-40 pb-20 lg:pb-25 xl:pb-30">
+    <section id="about" className="overflow-hidden pt-40 pb-20 lg:pb-25 xl:pb-30">
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
         <h2 className="mb-10 text-center text-3xl font-bold text-black dark:text-white">
           About PepeGuy
@@ -83,17 +83,14 @@ const About = () => {
               viewport={{ once: true }}
               className="relative mx-auto aspect-[1/1] w-full max-w-xs lg:w-1/2"
             >
-              {/* Add a wrapper for 3D perspective */}
-              <div className="image-wrapper">
-                <div className="image-container">
-                  <Image
-                    src={section.img}
-                    alt={section.title}
-                    width={300} /* Replace with your preferred width */
-                    height={300} /* Replace with your preferred height */
-                    className="rounded-[5%] shadow-lg"
-                  />
-                </div>
+              <div className="overflow-hidden rounded-full shadow-lg w-full h-full">
+                <Image
+                  src={section.img}
+                  alt={section.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-[5%]"
+                />
               </div>
             </motion.div>
           </div>
