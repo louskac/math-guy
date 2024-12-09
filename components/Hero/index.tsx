@@ -54,7 +54,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <p className="mt-5 text-black dark:text-white">
-                  Join us if you're really not a math guy either!
+                  Join us if you're really as chill as we are...
                 </p>
               </div>
             </div>
