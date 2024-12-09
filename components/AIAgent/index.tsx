@@ -119,8 +119,7 @@ const AIAgent = () => {
               alt="PepeGuy AI Agent"
               width={500}
               height={500}
-                    className="hidden dark:block "
-              className="rounded-lg shadow-solid-l "
+              className="shadow-solid-l rounded-[5%]"
             />
           </div>
         </div>
