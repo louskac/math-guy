@@ -95,14 +95,14 @@ const AIAgent = () => {
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask anything math-related"
+                placeholder="Just chill bro"
                 className="w-full rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
               />
               <button
                 onClick={handleGenerate}
                 className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-black p-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
               >
-                Get Answer
+                Get chilled
               </button>
             </div>
             {displayedText && (
