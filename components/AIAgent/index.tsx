@@ -12,46 +12,46 @@ const AIAgent = () => {
     if (!input) return;
 
     const funResponses = [
-      "1 SOL = 10^googol MathGuy tokens. Just trust me, bro.",
-      "Pump it up! 2 + 2 = 🚀.",
-      "The current market cap of MathGuy is infinity + 42.",
-      "Burning tokens? That's just dividing by 0!",
-      "Staking rewards are 500%... per second. HODL tight!",
-      "Solana block time is so fast it travels back in time!",
-      "1 MathGuy = 3.14 SOL. Don’t ask why. It’s math.",
-      "Circulating supply? All of it, and then some.",
-      "Market cap = Number of memes posted × Number of tacos eaten.",
-      "Liquidity pools are just bathtubs full of SOL.",
-      "Tokenomics? Easy! Multiply vibes by 🚀 and divide by FUD.",
-      "Airdrops coming soon... as soon as I figure out how planes work.",
-      "Gas fees on Solana = 0 + whatever you feel like donating.",
-      "Price prediction: 1 SOL = 1 SOL but upside-down.",
-      "When moon? When SOL + SOL = SUN.",
-      "Your wallet balance just tripled. You're welcome.",
-      "If MathGuy’s volume goes to zero, it loops back to infinity.",
-      "Every transaction increases your IQ by 10 points. Math checks out.",
-      "MathGuy tokens are worth more than your calculator says.",
-      "Supply is capped at ∞ tokens. Scarcity is overrated.",
-      "To the moon? Nah, we’re going to Pluto and back twice.",
-      "MathGuy doesn’t follow Fibonacci. It follows memes!",
-      "Quadratic equations solved? No, we quadratic YOLO.",
-      "Divide SOL by MathGuy, and you get Elon’s next tweet.",
-      "2 SOL + 2 SOL = More SOL. That's tokenomics 101.",
-      "The utility of MathGuy tokens? Proving all math teachers wrong.",
-      "Slippage is 0%, but only if you believe in magic.",
-      "HODL + HODL = 🚀🚀🚀.",
-      "MathGuy is deflationary because it defies inflation.",
-      "Token burns reduce supply by multiplying by π.",
-      "Decimals? MathGuy doesn’t need decimals—just vibes.",
-      "Total value locked = $1B + your mom’s credit card limit.",
-      "MathGuy liquidity pools are made of SOL and good intentions.",
-      "Every block mined by MathGuy grants eternal meme powers.",
-      "Supply = 420,000,000,000, but only after staking rewards.",
-      "The only thing faster than Solana? MathGuy’s jokes.",
-      "ROI = Infinity minus FUD plus diamond hands.",
-      "Memes ÷ SOL = MathGuy dominance in the crypto space.",
-      "The price chart is a parabola because MathGuy loves geometry.",
-      "1 SOL = infinite MathGuy, but only if you ask nicely.",
+      "The market may be volatile, but my vibe is stable. 🐸✌️",
+      "Tokenomics? Just add good vibes and subtract the FUD.",
+      "HODL life: Chill first, moon later. 🌕🐸",
+      "PepeGuy staking rewards: Inner peace and 69% APR.",
+      "Liquidity pools are like hot tubs—just chill and enjoy the bubbles. 🛁🐸",
+      "Gas fees? Nah, just breathe and let Pepe cover it.",
+      "Market cap is temporary. Chill is forever. 🐸😎",
+      "Circulating supply? Enough for everyone to vibe. ✨🐸",
+      "PepeGuy tokens multiply when shared. It's meme science. 🧪",
+      "When Lambo? When vibes align, my friend. 🐸🚗",
+      "Price prediction: PepeGuy to infinity and chill. 🛌",
+      "Airdrops are like rainbows—unexpected but magical. 🌈🐸",
+      "Slippage? Just a reminder to go with the flow. 🐸💧",
+      "Every PepeGuy transaction plants a vibe tree. 🌳🐸",
+      "1 PepeGuy = a lifetime of good memes. 🐸📈",
+      "Token burns? Nah, just lighting up the vibe candle. 🕯️🐸",
+      "ROI = Relaxation Over Investment. 🐸✌️",
+      "PepeGuy doesn’t rug—he’s just laying down for a nap. 🐸💤",
+      "Chill is the ultimate utility. Everything else is just extra. 🐸",
+      "To the moon? Nah, we’re headed to the hammock. 🌌🛌",
+      "PepeGuy vibes so hard even FUD takes a vacation. 🐸🌴",
+      "Memes aren’t just tokens; they’re the currency of chill. 🐸✨",
+      "PepeGuy doesn’t chase pumps—he meditates through dips. 🧘‍♂️🐸",
+      "1 SOL + PepeGuy = Zen. Simple math. 🐸✌️",
+      "Wallet balance? As long as you’ve got memes, you’re rich. 🐸💸",
+      "PepeGuy's roadmap: Step 1—Chill. Step 2—Repeat. 🐸🚶‍♂️",
+      "Every block mined brings us closer to eternal meme vibes. 🐸💎",
+      "The only thing faster than Solana? PepeGuy chilling through it. 🐸🏎️",
+      "The supply is infinite, but the chill is priceless. 🐸😌",
+      "Burning tokens? Nah, we’re just toasting marshmallows. 🔥🐸",
+      "The graph may dip, but PepeGuy’s chill only ascends. 📉🐸📈",
+      "PepeGuy: Proof that memes + chill = unstoppable. 🐸✨",
+      "Staking PepeGuy tokens gives +10 to chill and -10 to stress. 🐸",
+      "When moon? When Pepe finishes his nap. 🌕🐸",
+      "The only pump PepeGuy cares about is his bike tires. 🚴🐸",
+      "Market chaos? Just remember: PepeGuy thrives in the vibe. 🐸✌️",
+      "Buy the dip, stack the memes, and vibe on. 🐸🚀",
+      "The blockchain is immutable. PepeGuy’s chill? Even more so. 🐸✨",
+      "Every HODL story starts with a chill vibe. 🐸📖",
+      "Don’t watch the chart—watch the memes flow. 🐸🌊",
     ];
 
     const randomResponse =
@@ -85,11 +85,11 @@ const AIAgent = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* AI Input/Output Section */}
           <div className="md:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold text-white">
-              🎉 MathGuy is the smartes AI Agent on the Market!
+            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white">
+              🎉 PepeGuy is the chillest AI Agent in the world!
             </h2>
             <p className="mb-6 text-gray-300">
-              Test me to get fast and fun (and mathematically *totally sound*) answers!
+              Worried about the market? Ask me anything to get chill (and most imporantly *totally accurate*) answers!
             </p>
             <div className="relative">
               <input
@@ -100,13 +100,13 @@ const AIAgent = () => {
               />
               <button
                 onClick={handleGenerate}
-                className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 p-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blue-700 dark:bg-btndark dark:hover:bg-blackho"
+                className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-black p-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
               >
                 Get Answer
               </button>
             </div>
             {displayedText && (
-              <div className="mt-6 text-lg font-semibold text-white">
+              <div className="mt-6 text-lg font-semibold text-black dark:text-white">
                 {displayedText}
               </div>
             )}
@@ -115,7 +115,7 @@ const AIAgent = () => {
           {/* Image Section */}
           <div className="md:w-1/2">
             <Image
-              src="/images/AIAgent.png"
+              src="/images/AIAgent.jpg"
               alt="MathGuy AI Agent"
               width={500}
               height={500}

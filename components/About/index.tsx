@@ -6,34 +6,34 @@ import Image from "next/image";
 const About = () => {
   const sections = [
     {
-      title: "I'm not really a math guy",
+      title: "PepeGuy: Master of Chill",
       description:
-        "Meet MathGuy, your gateway to the meme token revolution. Inspired by the hilarious Puss in Boots quote, this token is all about combining the fun and whimsy of internet culture with the cutting-edge technology of Solana. Why join? Because MathGuy isn’t just a meme—it’s a movement. It’s a chance to laugh, connect, and grow together as we ride the wave of the blockchain revolution.",
-      img: "/images/stickers/1.png",
+        "PepeGuy isn’t just a token; it’s a lifestyle. Inspired by the legendary meme and the art of taking it easy, PepeGuy invites you to embrace the chill life while enjoying the potential of meme tokens. Join a community where humor meets innovation, and every day feels like a vibe-filled journey through the blockchain jungle.",
+      img: "/images/stickers/1.jpg",
     },
     {
-      title: "Watch it pump",
+      title: "Pump? Chill.",
       description:
-        "The crypto market is buzzing, and Solana tokens are leading the charge. MathGuy is here to amplify the excitement with a community-powered token that’s as fun as it is ambitious. Hop on board as we aim for the moon, and don’t forget to grab some popcorn while watching those green candles light up the charts. Together, we’ll turn every pump into a party.",
-      img: "/images/stickers/2.png",
+        "While the market panics, PepeGuy stays calm. Watch those green candles rise, but remember—the real value is in the memes we shared along the way. PepeGuy is here to amplify the fun of crypto without losing the chill. Sit back, grab a coffee, and watch the charts with a smirk.",
+      img: "/images/stickers/2.jpg",
     },
     {
-      title: "HODL, my friend",
+      title: "HODL Like a True Pepe",
       description:
-        "Hold On for Dear Life! The crypto journey can feel like a rollercoaster with its ups and downs, but MathGuy is here to remind you that patience is everything. When the journey gets tough, the tough get ahead. Our token is built on community and trust, so lean back, relax, and enjoy the ride. Good things come to those who wait—and those who hold.",
-      img: "/images/stickers/3.png",
+        "The crypto world can be wild, but PepeGuy reminds you to stay cool. HODL isn’t just a strategy—it’s a mindset. Relax, take a deep breath, and let PepeGuy guide you through the waves. The best gains come to those who wait... and meme.",
+      img: "/images/stickers/3.jpg",
     },
     {
-      title: "Sellers rekt",
+      title: "Rekt Avoidance Plan",
       description:
-        "We’ve all heard the stories—people who sold too soon and missed out on life-changing gains. Don’t be that person! MathGuy is here to remind you to think long-term and trust the process. Sellers may end up rekt, but those who stay strong and believe in the vision will be the ones celebrating at the finish line.",
-      img: "/images/stickers/4.png",
+        "Selling too soon? That’s a one-way ticket to Rektville. PepeGuy teaches you the art of patience, where believers are rewarded and paper hands are left behind. Stick with Pepe, and let’s vibe our way to the finish line.",
+      img: "/images/stickers/4.jpg",
     },
     {
-      title: "Wish I could count it",
+      title: "Gains Beyond Counting",
       description:
-        "What’s better than imagining gains so big they can’t be counted? MathGuy is all about dreaming big and delivering results. Whether you’re in it for the memes or the moonshot, we’re building something that has the potential to take the world by storm. Let’s make those gains so massive that even MathGuy can’t calculate them.",
-      img: "/images/stickers/5.png",
+        "Imagine gains so massive even calculators give up. That’s the dream PepeGuy delivers. With a mix of memes, community, and unstoppable chill, we’re aiming for the kind of growth that makes headlines. Let’s make the future of crypto fun, impactful, and, above all, meme-tastic.",
+      img: "/images/stickers/5.jpg",
     },
   ];
 
@@ -91,7 +91,7 @@ const About = () => {
                     alt={section.title}
                     width={300} /* Replace with your preferred width */
                     height={300} /* Replace with your preferred height */
-                    className="rounded-full shadow-lg"
+                    className="rounded-[5%] shadow-lg"
                   />
                 </div>
               </div>

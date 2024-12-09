@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Hero = () => {
-  const [address, setAddress] = useState("CxzE87ZsDKr38Var7p7nEdJRhTuuVFj5ZnNJNjUmmoon");
+  const [address, setAddress] = useState("96w6YhZudevnwY2u82ypETPebbj7GVfbYuoMcwjzaTyv");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
           <div className="md:w-1/2">
             <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              🚀 MathGuy - The Meme Token
+              🚀 PepeGuy - The new lifestyle
             </h4>
             <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
               To the Moon {" "}
@@ -27,9 +27,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-gray-700 dark:text-gray-300">
-              MathGuy is the hottest meme token on the Solana blockchain, inspired by 
-              the iconic line from Puss in Boots: <strong>"I don't know, I'm not really a math guy."</strong> 
-              Join the movement, HODL, and let’s watch the charts pump together!
+              PepeGuy is the chillest meme token in the game, inspired by the timeless vibes of everyone's favorite frog. This is a community takeover with our own CTO. Whether you're here for the memes, the community, or the moon, PepeGuy has you covered. Embrace the chill, HODL tight, and let’s vibe together as we ride the blockchain wave to new heights! 🐸✌️
             </p>
 
             <div className="mt-10">
@@ -68,7 +66,7 @@ const Hero = () => {
               <div className="relative aspect-[500/500] w-full">
                 <Image
                   className="shadow-solid-l"
-                  src="/images/hero/mathguy.gif" // Replace with the actual path to your GIF
+                  src="/images/hero/coin.png" // Replace with the actual path to your GIF
                   alt="MathGuy Meme"
                   fill
                 />
