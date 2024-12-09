@@ -41,7 +41,7 @@ const About = () => {
     <section id='about' className="overflow-hidden pt-40 pb-20 lg:pb-25 xl:pb-30">
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
         <h2 className="mb-10 text-center text-3xl font-bold text-black dark:text-white">
-          About MathGuy
+          About PepeGuy
         </h2>
 
         {sections.map((section, index) => (

@@ -67,7 +67,7 @@ const Hero = () => {
                 <Image
                   className="shadow-solid-l"
                   src="/images/hero/coin.png" // Replace with the actual path to your GIF
-                  alt="MathGuy Meme"
+                  alt="PepeGuy Meme"
                   fill
                 />
               </div>

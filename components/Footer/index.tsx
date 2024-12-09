@@ -107,7 +107,7 @@ const Footer = () => {
 
               {/* Telegram Icon */}
               <li>
-                <a href="t.me/PEPEGUYCTO" target="_blank" rel="noopener noreferrer" aria-label="Telegram icon">
+                <a href="https://t.me/PEPEGUYCTO" target="_blank" rel="noopener noreferrer" aria-label="Telegram icon">
                   <svg
                     className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"

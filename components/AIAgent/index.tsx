@@ -116,7 +116,7 @@ const AIAgent = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/AIAgent.jpg"
-              alt="MathGuy AI Agent"
+              alt="PepeGuy AI Agent"
               width={500}
               height={500}
               className="rounded-lg shadow-solid-l"

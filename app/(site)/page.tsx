@@ -14,7 +14,7 @@ import Testimonial from "@/components/Testimonial";
 import AIAgent from "@/components/AIAgent";
 
 export const metadata: Metadata = {
-  title: "🚀 MathGuy - Solana meme token",
+  title: "🚀 PepeGuy - chillest Solana token",
   description: "Pump it up and don't forget to HODL!",
 };
 
