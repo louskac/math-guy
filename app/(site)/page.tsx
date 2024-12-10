@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import About from "@/components/About";
@@ -11,7 +12,11 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
 import AIAgent from "@/components/AIAgent";
-import RugEscapeGame from "@/components/Game/RugEscapeGame";
+
+// Dynamically import RugEscapeGame
+const RugEscapeGame = dynamic(() => import("@/components/Game/RugEscapeGame"), {
+  ssr: false, // Disable server-side rendering
+});
 
 export const metadata: Metadata = {
   title: "🚀 PepeGuy - chillest Solana token",
@@ -22,7 +27,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <RugEscapeGame />
+      <RugEscapeGame /> {/* Dynamically loaded */}
       <AIAgent />
       <About />
       <FeaturesTab />

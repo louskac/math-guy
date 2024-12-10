@@ -13,6 +13,11 @@ const RugEscapeGame = () => {
   const [userData, setUserData] = useState({ name: "", wallet: "" }); // Track user's name and wallet
   const [finalScore, setFinalScore] = useState(0); // Track the user's final score
 
+  const handleRestartGame = () => {
+    setGameStarted(false);
+    setGameOver(false);
+  };
+
   const handleStartGame = ({ name, wallet }) => {
     if (!name || !wallet) {
       alert("You can still play the game, but your score won’t be included in the competition!");
@@ -23,6 +28,10 @@ const RugEscapeGame = () => {
 
   useEffect(() => {
     if (!gameStarted) return;
+
+    if (gameRef.current && gameRef.current.destroy) {
+      gameRef.current.destroy(true);
+    }
 
     const config = {
       type: Phaser.AUTO,
@@ -264,8 +273,10 @@ const RugEscapeGame = () => {
       if (scene.arcadeMusic) {
         scene.arcadeMusic.stop(); // Stop the arcade music
       }
-      setFinalScore(scene.score); // Save the final score
-      setGameOver(true); // Show the Game Over screen
+      scene.physics.pause();
+      if (scene.arcadeMusic) scene.arcadeMusic.stop(); // Stop the arcade music
+      setFinalScore(scene.score || 0); // Save the final score
+      setGameOver(true); // Transition to the Game Over screen
     }
 
     return () => {
@@ -275,9 +286,19 @@ const RugEscapeGame = () => {
 
   return (
     <>
-      {!gameStarted && !gameOver && <WelcomeScreen onStart={handleStartGame} />}
-      {gameStarted && !gameOver && <div ref={gameRef} style={{ width: "100%", height: "100%" }} />}
-      {gameOver && <GameOverScreen score={finalScore} onRestart={handleStartGame} />}
+      {!gameStarted && !gameOver && (
+        <WelcomeScreen onStart={handleStartGame} />
+      )}
+      {gameStarted && !gameOver && (
+        <div ref={gameRef} style={{ width: "100%", height: "100%" }} />
+      )}
+      {gameOver && (
+        <GameOverScreen
+          score={finalScore}
+          onRestart={handleRestartGame}
+          userData={userData}
+        />
+      )}
     </>
   );
 };
