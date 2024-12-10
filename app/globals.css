@@ -139,3 +139,19 @@ pre {
   transform: scale(1.1) rotateY(10deg) rotateX(10deg);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
 }
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%); /* Start completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End completely off-screen to the left */
+  }
+}
+
+.marquee {
+  display: inline-block;
+  animation: scroll-marquee 10s linear infinite; /* Adjust the duration as needed */
+  white-space: nowrap; /* Prevent wrapping */
+  will-change: transform; /* Optimize animation performance */
+}
