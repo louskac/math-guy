@@ -9,9 +9,9 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
-import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import AIAgent from "@/components/AIAgent";
+import RugEscapeGame from "@/components/Game/RugEscapeGame";
 
 export const metadata: Metadata = {
   title: "🚀 PepeGuy - chillest Solana token",
@@ -22,6 +22,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <RugEscapeGame />
       <AIAgent />
       <About />
       <FeaturesTab />

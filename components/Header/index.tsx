@@ -35,6 +35,15 @@ const Header = () => {
           : ""
       }`}
     >
+      <div className="absolute top-2 left-0 w-full text-center">
+        <marquee
+          behavior="scroll"
+          direction="left"
+          className="text-yellow-400 text-lg md:text-xl font-bold uppercase tracking-wider animate-pulse"
+        >
+          #1 Yo Mama - 69 420 🚀🔥 #2 Deez Nuts - 6 969 🐸✌️ #3 PepeGuy - 420
+        </marquee>
+      </div>
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4 pr-8">
         <a href="/">
