@@ -1,13 +1,45 @@
 "use client";
 
 import React, { useState } from "react";
+import { supabase } from "@/lib/supabase"; // Ensure this path is correct based on your project structure
 
 const GameOverScreen = ({ onRestart, score }) => {
   const [name, setName] = useState("");
   const [wallet, setWallet] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleRestart = () => {
-    onRestart({ name: name || "Anonymous", wallet: wallet || "Not Provided" }); // Allow restarting without a name or wallet
+  const handleRestart = async () => {
+    // Prevent multiple submissions
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+
+    // Default values for name and wallet
+    const playerName = name || "Anonymous";
+    const playerWallet = wallet || "Not Provided";
+
+    // Save data to Supabase
+    try {
+      const { data, error } = await supabase.from("leaderboard").insert([
+        {
+          name: playerName,
+          wallet: playerWallet,
+          score, // Use the score passed as a prop
+        },
+      ]);
+
+      if (error) {
+        console.error("Error saving score to the database:", error.message);
+      } else {
+        console.log("Score successfully saved:", data);
+      }
+    } catch (err) {
+      console.error("Unexpected error while saving score:", err);
+    } finally {
+      setIsSubmitting(false);
+      // Restart the game
+      onRestart({ name: playerName, wallet: playerWallet });
+    }
   };
 
   return (
@@ -34,7 +66,7 @@ const GameOverScreen = ({ onRestart, score }) => {
         <input
           type="text"
           placeholder="Enter your name (optional)"
-          className="w-full px-4 py-2 border-2 border-gray-400 rounded-md text-black text-center text-lg focus:outline-none dixed"
+          className="w-full px-4 py-2 border-2 border-gray-400 rounded-md text-black text-center text-lg focus:outline-none"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -55,8 +87,9 @@ const GameOverScreen = ({ onRestart, score }) => {
       <button
         className="px-8 py-3 bg-red-500 text-white text-lg font-bold uppercase rounded-md hover:bg-red-600 transition-shadow drop-shadow-lg hover:drop-shadow-xl"
         onClick={handleRestart}
+        disabled={isSubmitting} // Disable button while submitting
       >
-        Retry the Chaos
+        {isSubmitting ? "Saving..." : "Retry the Chaos"}
       </button>
     </div>
   );

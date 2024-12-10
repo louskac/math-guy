@@ -4,16 +4,46 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+
+type LeaderboardItem = {
+  id: number;
+  created_at: string;
+  name: string;
+  address: string;
+  clicks: number;
+};
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
+  const [leaderboardData, setLeaderboardData] = useState<LeaderboardItem[]>([]);
 
   const pathUrl = usePathname();
+
+  // Fetch data from Supabase
+  const fetchLeaderboardData = async () => {
+    try {
+      const { data, error } = await supabase.from("pepe").select("*").order("clicks", { ascending: false });
+
+      if (error) throw error;
+      setLeaderboardData(data);
+    } catch (error) {
+      console.error("Error fetching leaderboard data:", error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchLeaderboardData();
+    window.addEventListener("scroll", handleStickyMenu);
+    return () => {
+      window.removeEventListener("scroll", handleStickyMenu);
+    };
+  }, []);
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -23,10 +53,6 @@ const Header = () => {
       setStickyMenu(false);
     }
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyMenu);
-  });
 
   return (
     <header
@@ -39,7 +65,12 @@ const Header = () => {
       {/* Scrolling Text */}
       <div className="absolute top-2 left-0 w-full overflow-hidden">
         <div className="marquee text-yellow-400 text-lg md:text-xl font-bold uppercase tracking-wider">
-          #1 Yo Mama - 69 420 🚀🔥 &nbsp; #2 Deez Nuts - 6 969 🐸✌️ &nbsp; #3 PepeGuy - 420 &nbsp;
+          {leaderboardData.map(
+            (item, index) =>
+              `#${index + 1} ${item.name} - ${item.clicks.toLocaleString()} ${
+                index === 0 ? "🚀🔥" : index === 1 ? "🐸✌️" : "✌️"
+              } `
+          )}
         </div>
       </div>
 
