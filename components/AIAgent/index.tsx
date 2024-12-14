@@ -15,41 +15,41 @@ const AIAgent = () => {
       "The market may be volatile, but my vibe is stable. 🐸✌️",
       "Tokenomics? Just add good vibes and subtract the FUD.",
       "HODL life: Chill first, moon later. 🌕🐸",
-      "PepeGuy staking rewards: Inner peace and 69% APR.",
+      "Trumpius Maximus staking rewards: Inner peace and 69% APR.",
       "Liquidity pools are like hot tubs—just chill and enjoy the bubbles. 🛁🐸",
       "Gas fees? Nah, just breathe and let Pepe cover it.",
       "Market cap is temporary. Chill is forever. 🐸😎",
       "Circulating supply? Enough for everyone to vibe. ✨🐸",
-      "PepeGuy tokens multiply when shared. It's meme science. 🧪",
+      "Trumpius Maximus tokens multiply when shared. It's meme science. 🧪",
       "When Lambo? When vibes align, my friend. 🐸🚗",
-      "Price prediction: PepeGuy to infinity and chill. 🛌",
+      "Price prediction: Trumpius Maximus to infinity and chill. 🛌",
       "Airdrops are like rainbows—unexpected but magical. 🌈🐸",
       "Slippage? Just a reminder to go with the flow. 🐸💧",
-      "Every PepeGuy transaction plants a vibe tree. 🌳🐸",
-      "1 PepeGuy = a lifetime of good memes. 🐸📈",
+      "Every Trumpius Maximus transaction plants a vibe tree. 🌳🐸",
+      "1 Trumpius Maximus = a lifetime of good memes. 🐸📈",
       "Token burns? Nah, just lighting up the vibe candle. 🕯️🐸",
       "ROI = Relaxation Over Investment. 🐸✌️",
-      "PepeGuy doesn’t rug—he’s just laying down for a nap. 🐸💤",
+      "Trumpius Maximus doesn’t rug—he’s just laying down for a nap. 🐸💤",
       "Chill is the ultimate utility. Everything else is just extra. 🐸",
       "To the moon? Nah, we’re headed to the hammock. 🌌🛌",
-      "PepeGuy vibes so hard even FUD takes a vacation. 🐸🌴",
+      "Trumpius Maximus vibes so hard even FUD takes a vacation. 🐸🌴",
       "Memes aren’t just tokens; they’re the currency of chill. 🐸✨",
-      "PepeGuy doesn’t chase pumps—he meditates through dips. 🧘‍♂️🐸",
-      "1 SOL + PepeGuy = Zen. Simple math. 🐸✌️",
+      "Trumpius Maximus doesn’t chase pumps—he meditates through dips. 🧘‍♂️🐸",
+      "1 SOL + Trumpius Maximus = Zen. Simple math. 🐸✌️",
       "Wallet balance? As long as you’ve got memes, you’re rich. 🐸💸",
-      "PepeGuy's roadmap: Step 1—Chill. Step 2—Repeat. 🐸🚶‍♂️",
+      "Trumpius Maximus's roadmap: Step 1—Chill. Step 2—Repeat. 🐸🚶‍♂️",
       "Every block mined brings us closer to eternal meme vibes. 🐸💎",
-      "The only thing faster than Solana? PepeGuy chilling through it. 🐸🏎️",
+      "The only thing faster than Solana? Trumpius Maximus chilling through it. 🐸🏎️",
       "The supply is infinite, but the chill is priceless. 🐸😌",
       "Burning tokens? Nah, we’re just toasting marshmallows. 🔥🐸",
-      "The graph may dip, but PepeGuy’s chill only ascends. 📉🐸📈",
-      "PepeGuy: Proof that memes + chill = unstoppable. 🐸✨",
-      "Staking PepeGuy tokens gives +10 to chill and -10 to stress. 🐸",
+      "The graph may dip, but Trumpius Maximus’s chill only ascends. 📉🐸📈",
+      "Trumpius Maximus: Proof that memes + chill = unstoppable. 🐸✨",
+      "Staking Trumpius Maximus tokens gives +10 to chill and -10 to stress. 🐸",
       "When moon? When Pepe finishes his nap. 🌕🐸",
-      "The only pump PepeGuy cares about is his bike tires. 🚴🐸",
-      "Market chaos? Just remember: PepeGuy thrives in the vibe. 🐸✌️",
+      "The only pump Trumpius Maximus cares about is his bike tires. 🚴🐸",
+      "Market chaos? Just remember: Trumpius Maximus thrives in the vibe. 🐸✌️",
       "Buy the dip, stack the memes, and vibe on. 🐸🚀",
-      "The blockchain is immutable. PepeGuy’s chill? Even more so. 🐸✨",
+      "The blockchain is immutable. Trumpius Maximus’s chill? Even more so. 🐸✨",
       "Every HODL story starts with a chill vibe. 🐸📖",
       "Don’t watch the chart—watch the memes flow. 🐸🌊",
     ];
@@ -86,7 +86,7 @@ const AIAgent = () => {
           {/* AI Input/Output Section */}
           <div className="md:w-1/2">
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white">
-              🎉 PepeGuy is the chillest AI Agent in the world!
+              🎉 Trumpius Maximus is the chillest AI Agent in the world!
             </h2>
             <p className="mb-6 text-gray-300">
               Worried about the market? Ask me anything to get chill (and most imporantly *totally accurate*) answers!
@@ -116,7 +116,7 @@ const AIAgent = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/AIAgent.jpg"
-              alt="PepeGuy AI Agent"
+              alt="Trumpius Maximus AI Agent"
               width={500}
               height={500}
               className="shadow-solid-l rounded-[5%]"
