@@ -19,7 +19,7 @@ const RugEscapeGame = dynamic(() => import("@/components/Game/RugEscapeGame"), {
 });
 
 export const metadata: Metadata = {
-  title: "🚀 Trumpius Maximus - chillest Solana token",
+  title: "🚀 PepeGuy - chillest Solana token",
   description: "Pump it up and don't forget to HODL!",
 };
 

@@ -14,23 +14,23 @@ const featuresTabData: FeatureTab[] = [
   },
   {
     id: "tabTwo",
-    shortTitle: "Find Trumpius Maximus Token",
-    title: "Step 2: Find Trumpius Maximus Token on your DEX",
+    shortTitle: "Find PepeGuy Token",
+    title: "Step 2: Find PepeGuy Token on your DEX",
     desc1:
-      "Go to your favorite DEX and search for the Trumpius Maximus token using its contract address. Double-check to ensure you're selecting the official token to avoid scams.",
+      "Go to your favorite DEX and search for the PepeGuy token using its contract address. Double-check to ensure you're selecting the official token to avoid scams.",
     desc2:
-      "You can copy the contract address from the official Trumpius Maximus website or social media channels, or click the button in the navigation.",
+      "You can copy the contract address from the official PepeGuy website or social media channels, or click the button in the navigation.",
     image: "/images/how-to-buy/find-token-light.webp",
     imageDark: "/images/how-to-buy/find-token-dark.webp",
   },
   {
     id: "tabThree",
     shortTitle: "Swap Tokens",
-    title: "Step 3: Swap for Trumpius Maximus",
+    title: "Step 3: Swap for PepeGuy",
     desc1:
-      "Choose the SOL/Trumpius Maximus trading pair and enter the amount of SOL you'd like to swap. Review the transaction details before confirming.",
+      "Choose the SOL/PepeGuy trading pair and enter the amount of SOL you'd like to swap. Review the transaction details before confirming.",
     desc2:
-      "Once the transaction is complete, your Trumpius Maximus tokens will be added to your wallet balance.",
+      "Once the transaction is complete, your PepeGuy tokens will be added to your wallet balance.",
     image: "/images/how-to-buy/swap-light.webp",
     imageDark: "/images/how-to-buy/swap-dark.webp",
   },

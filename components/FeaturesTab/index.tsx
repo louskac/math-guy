@@ -82,7 +82,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Find Trumpius Maximus Token on you DEX
+                  Find PepeGuy Token on you DEX
                 </button>
               </div>
             </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Hero = () => {
-  const [address, setAddress] = useState("E7FvTn2cebMVh8mai1qiA93Y5xwMvhHZ8nUxtsYVpump");
+  const [address, setAddress] = useState("96w6YhZudevnwY2u82ypETPebbj7GVfbYuoMcwjzaTyv");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
           <div className="md:w-1/2">
             <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              🚀 Trumpius Maximus - The new lifestyle
+              🚀 PepeGuy - The new lifestyle
             </h4>
             <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
               To the Moon {" "}
@@ -27,7 +27,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-gray-700 dark:text-gray-300">
-            Trumpius Maximus is the chillest meme token in the game, inspired by the timeless vibes of everyone's favorite frog. This is a community takeover with our own CTO. Whether you're here for the memes, the community, or the moon, Trumpius Maximus has you covered. Embrace the chill, HODL tight, and let’s vibe together as we ride the blockchain wave to new heights! 🐸✌️
+              PepeGuy is the chillest meme token in the game, inspired by the timeless vibes of everyone's favorite frog. This is a community takeover with our own CTO. Whether you're here for the memes, the community, or the moon, PepeGuy has you covered. Embrace the chill, HODL tight, and let’s vibe together as we ride the blockchain wave to new heights! 🐸✌️
             </p>
 
             <div className="mt-10">
@@ -66,8 +66,8 @@ const Hero = () => {
               <div className="relative aspect-[500/500] w-full">
                 <Image
                   className="shadow-solid-l"
-                  src="/images/hero/trump.jpg" // Replace with the actual path to your GIF
-                  alt="Trumpius Maximus Meme"
+                  src="/images/hero/coin.png" // Replace with the actual path to your GIF
+                  alt="PepeGuy Meme"
                   fill
                 />
               </div>
