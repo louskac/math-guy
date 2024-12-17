@@ -25,10 +25,13 @@ const Header = () => {
 
   const pathUrl = usePathname();
 
-  // Fetch data from Supabase
+  // Fetch leaderboard data
   const fetchLeaderboardData = async () => {
     try {
-      const { data, error } = await supabase.from("pepe").select("*").order("clicks", { ascending: false });
+      const { data, error } = await supabase
+        .from("pepe")
+        .select("*")
+        .order("clicks", { ascending: false });
 
       if (error) throw error;
       setLeaderboardData(data);
@@ -37,15 +40,36 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    fetchLeaderboardData();
-    window.addEventListener("scroll", handleStickyMenu);
-    return () => {
-      window.removeEventListener("scroll", handleStickyMenu);
-    };
-  }, []);
+  // Save IP data to Supabase
+  const saveVisit = async () => {
+    try {
+      // Fetch IP geolocation data
+      const response = await fetch(
+        `https://api.ipgeolocation.io/ipgeo?apiKey=fc55acc2a2644a55a04cba6d4829803b`
+      );
 
-  // Sticky menu
+      if (!response.ok) {
+        console.error("Failed to fetch IP data");
+        return;
+      }
+
+      const ipData = await response.json();
+      const ipDataString = JSON.stringify(ipData);
+
+      // Save the data into Supabase table 'visits'
+      const { error } = await supabase.from("visits").insert([{ text: ipDataString }]);
+
+      if (error) {
+        console.error("Error saving visit to Supabase:", error.message);
+      } else {
+        console.log("Visit logged successfully");
+      }
+    } catch (error) {
+      console.error("Error fetching or saving IP data:", error);
+    }
+  };
+
+  // Sticky menu handler
   const handleStickyMenu = () => {
     if (window.scrollY >= 80) {
       setStickyMenu(true);
@@ -53,6 +77,15 @@ const Header = () => {
       setStickyMenu(false);
     }
   };
+
+  useEffect(() => {
+    fetchLeaderboardData(); // Existing leaderboard data fetch
+    saveVisit(); // Log the visit to Supabase
+    window.addEventListener("scroll", handleStickyMenu);
+    return () => {
+      window.removeEventListener("scroll", handleStickyMenu);
+    };
+  }, []);
 
   return (
     <header
